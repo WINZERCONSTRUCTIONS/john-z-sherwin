@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WINZER CONSTRUCTIONS | Premium Builders</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f6f8;
+color:#333;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,0.85);
+backdrop-filter: blur(8px);
+z-index:1000;
+padding:15px 0;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+}
+
+nav ul li{
+margin:0 20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#f5b301;
+}
+
+/* HERO SECTION */
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("winzer.jpeg") center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+animation:fadeInDown 1s ease;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+animation:fadeInUp 1s ease;
+}
+
+.btn{
+background:#f5b301;
+color:black;
+padding:15px 30px;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+background:white;
+}
+
+/* SECTIONS */
+
+section{
+padding:80px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+margin-bottom:50px;
+font-size:36px;
+color:#1c1c1c;
+}
+
+/* ABOUT */
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about-grid img{
+width:100%;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.service-card{
+background:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 8px 25px rgba(0,0,0,0.1);
+transition:0.4s;
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+}
+
+/* PROJECTS */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:240px;
+object-fit:cover;
+border-radius:12px;
+transition:0.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* TESTIMONIAL */
+
+.testimonial{
+background:#1c1c1c;
+color:white;
+padding:60px;
+border-radius:20px;
+text-align:center;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* ANIMATION */
+
+@keyframes fadeInDown{
+from{opacity:0; transform:translateY(-40px)}
+to{opacity:1; transform:translateY(0)}
+}
+
+@keyframes fadeInUp{
+from{opacity:0; transform:translateY(40px)}
+to{opacity:1; transform:translateY(0)}
+}
+
+@media(max-width:768px){
+.about-grid{
+grid-template-columns:1fr;
+}
+.hero h1{
+font-size:40px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+<h1>WINZER CONSTRUCTIONS</h1>
+<p>25+ Years of Excellence in Building Dreams</p>
+<a href="#contact" class="btn">Get Free Quote</a>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+<h2>About Us</h2>
+<div class="about-grid">
+<div>
+<p>
+WINZER CONSTRUCTIONS is one of Coimbatore’s trusted construction companies with over 25 years of experience.
+We specialize in luxury villas, residential homes, commercial projects, and renovations.
+Our focus is delivering quality, durability, and modern architectural design.
+</p>
+</div>
+<img src="WhatsApp Image 2026-01-27 at 3.50.30 PM.jpeg">
+</div>
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+<h2>Our Services</h2>
+<div class="services">
+
+<div class="service-card">
+<h3>Luxury Villas</h3>
+<p>Premium custom villa construction with modern architecture.</p>
+</div>
+
+<div class="service-card">
+<h3>Commercial Projects</h3>
+<p>Professional commercial building and infrastructure solutions.</p>
+</div>
+
+<div class="service-card">
+<h3>Renovations</h3>
+<p>Transforming old structures into modern designs.</p>
+</div>
+
+<div class="service-card">
+<h3>Consultation</h3>
+<p>End-to-end project planning and expert construction advice.</p>
+</div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+<h2>Our Projects</h2>
+
+<div class="gallery">
+<img src="WhatsApp Image 2026-01-27 at 3.50.30 PM (1).jpeg">
+<img src="WhatsApp Image 2026-01-27 at 3.50.10 PM.jpeg">
+<img src="WhatsApp Image 2026-01-27 at 3.50.10 PM (2).jpeg">
+<img src="WhatsApp Image 2026-01-27 at 3.50.10 PM (3).jpeg">
+<img src="WhatsApp Image 2026-01-27 at 3.50.09 PM.jpeg">
+</div>
+
+</section>
+
+<!-- TESTIMONIAL -->
+
+<section>
+<div class="testimonial">
+<h2>Client Satisfaction</h2>
+<p>"Winzer Constructions delivered our dream home with perfection and professionalism."</p>
+</div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+<p><b>Owner:</b> John Z Zerwin</p>
+<p><b>Phone:</b> +91 9042090402</p>
+<p><b>Location:</b> Coimbatore, Tamil Nadu</p>
+</section>
+
+<footer>
+<p>© 2026 WINZER CONSTRUCTIONS | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
